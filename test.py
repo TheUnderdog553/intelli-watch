@@ -27,7 +27,7 @@ async def receive_and_execute_commands():
                 # Execute the received command and get the result
                 result = await execute_command(command_to_execute)
 
-                # Send the result back to the server
+                # Send the result back to the main server
                 response_data = {
                     "type": "command.result",
                     "result": result
